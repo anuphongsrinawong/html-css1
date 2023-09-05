@@ -84,13 +84,13 @@
 
         <div class="row mt-4">
           <div class="col-md-4">
-            <img src="image/มะเขือราชินีอบแห้ง.jpg" class="img-fluid cursor" alt="Image 1" onclick="currentSlide(1)">
+            <img src="image/มะเขือราชินีอบแห้ง.jpg" class="img-fluid cursor" alt="Image 1">
           </div>
           <div class="col-md-4">
-            <img src="image/มะเขือราชินีอบแห้ง3.jpg" class="img-fluid cursor" alt="Image 2" onclick="currentSlide(2)">
+            <img src="image/มะเขือราชินีอบแห้ง3.jpg" class="img-fluid cursor" alt="Image 2">
           </div>
           <div class="col-md-4">
-            <img src="image/มะเขือราชินีอบแห้ง7.jpg" class="img-fluid cursor" alt="Image 3" onclick="currentSlide(3)">
+            <img src="image/มะเขือราชินีอบแห้ง7.jpg" class="img-fluid cursor" alt="Image 3">
           </div>
         </div>
 
@@ -113,7 +113,7 @@
               <span class="font-size-11">
                 <span class="font-family-calibri">
                   <span class="font-size-14">ที่มา</span>
-                  <span class="font-size-14"> กลุ่มมะเขือเทศราชินีดำเนินงานจัดตั้งเมื่อปีพ.ศ. 2549
+                  <span class="font-size-14" id="origin"> กลุ่มมะเขือเทศราชินีดำเนินงานจัดตั้งเมื่อปีพ.ศ. 2549
                     เป็นการก่อตั้งจากกลุ่มแม่บ้านดอนตูม อำเภอบางเลน
                     จังหวัดนครปฐมหลังจากที่กลุ่มแม่บ้านว่างเว้นจากการทำอาชีพหลักของแต่ละครอบ
                     ครัวทางวิสาหกิจชุมชนจึงเห็นว่าชาวบ้านหลังจากที่ไม่มีการทำงานหลักแล้วจะมี
@@ -131,7 +131,7 @@
             <p class="mb-2 ms-4 me-0 mt-0">
               <span class="font-size-11">
                 <span class="font-family-calibri">
-                  <span class="font-size-14">สถานที่ผลิต 65</span>
+                  <span class="font-size-14" id="productionLocation">สถานที่ผลิต 65</span>
                   <span class="font-size-14">หมู่ที่ 5 </span>
                   <span class="font-size-14">ตำบลดอนตูม อำเภอบางเลน</span>&nbsp;
                   <span class="font-size-14">จังหวัดนครปฐม</span>&nbsp;
@@ -182,33 +182,33 @@
             <!-- สินค้า 1 -->
             <div class="box col-6 col-md-6 col-lg-12 my-3">
               <div class="news-right-pic pic_program">
-                <a href="index.html">
+                <a href="?product=1">
                   <img style="width: 80%; height: 160px;" src="image/มะเขือราชินีอบแห้ง.jpg" alt="มะเขือราชินีอบแห้ง">
                 </a>
                 <br>
-                <a href="index.html">มะเขือราชินีอบแห้ง (ดู : 3,092)</a>
+                <a href="?product=1">มะเขือราชินีอบแห้ง (ดู : 3,092)</a>
               </div>
             </div>
 
             <!-- สินค้า 2 -->
             <div class="box col-6 col-md-6 col-lg-12 my-3">
               <div class="news-right-pic pic_program">
-                <a href="produck2.html">
+                <a href="?product=2">
                   <img style="width: 80%; height: 160px;" src="image/เบญจรงค์ประยุกต์.jpg" alt="เบญจรงค์ประยุกต์">
                 </a>
                 <br>
-                <a href="produck2.html">เบญจรงค์ประยุกต์ (ดู : 4,719)</a>
+                <a href="?product=2">เบญจรงค์ประยุกต์ (ดู : 4,719)</a>
               </div>
             </div>
 
             <!-- สินค้า 3 -->
             <div class="box col-6 col-md-6 col-lg-12 my-3">
               <div class="news-right-pic pic_program">
-                <a href="produck.html">
+                <a href="?product=3">
                   <img style="width: 80%; height: 160px;" src="image/ขนมเปี๊ยะกุหลาบ2.jpg" alt="ขนมเปี๊ยะกุหลาบ">
                 </a>
                 <br>
-                <a href="produck.html">ขนมเปี๊ยะกุหลาบ (ดู : 1,632)</a>
+                <a href="?product=3">ขนมเปี๊ยะกุหลาบ (ดู : 1,632)</a>
               </div>
             </div>
 
@@ -271,69 +271,8 @@
     </div>
   </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <script src="index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("demo");
-      let captionText = document.getElementById("caption");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-      captionText.innerHTML = dots[slideIndex - 1].alt;
-    }
-  </script>
 </body>
 
 </html>
