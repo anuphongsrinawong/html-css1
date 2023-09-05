@@ -1,0 +1,60 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.ppp{  
+ display: flex;
+ margin-top: 5rem;
+ margin-left: 10rem;
+ margin: 10rem;
+
+}
+.font01 h1{
+  font-size: 30px;
+  margin-left: 5rem;
+
+}
+.font01 span{
+  margin-left: 5rem;
+}
+.font01 p{
+  margin-left: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------footer2--------*/
+.containervv1{
+	
+	
+	width:auto;
+  
+  }
+  .t-link02{
+	width: 100%;
+	height: auto;
+	padding: 21px 0;
+	font-size: 14px;
+	text-align: center;
+	background-color: goldenrod;
+  }
+  .t-link02 a{
+	color: #000;
+	text-decoration: none;
+  }

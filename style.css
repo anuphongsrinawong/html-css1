@@ -1,0 +1,367 @@
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+  --green:#27ae60;
+  --black:#192a56;
+  --red:#d72b2b;
+  --light-color:#666;
+  --box-shadow:0.5rem
+1.5rem rgba(0,0,0,.1);
+}
+.ffff{
+  width: auto;
+  height: 0.5rem;
+  background-color: goldenrod;
+}
+/*----------menu Dropdown-----------*/
+
+.nav ul{
+  list-style: none;
+  background-color: #1d75d6;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-size: 1em;
+  line-height: 20px;
+  text-align: left;
+}
+.nav a{
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding-left: 15px;
+  border-bottom: 1px solid #888;
+  transition: .3s;
+}
+.nav a:hover {
+  color: #000;
+  opacity: 10;
+}
+.nav li li{
+  font-size: .7em;
+} 
+@media screen and (min-width: 650px) {
+  .nav li {
+    width: 130px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    display: inline-block;
+    margin-right: -4px;
+  }
+  .nav a {
+    border-bottom: none;
+  }
+  .nav > ul > li {
+    text-align: center;
+  }
+  .nav > ul > li > a {
+    padding-left: 0;
+  }
+  /*-------- sup menu--------------*/
+  .nav li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+  }
+  .nav li:hover ul{
+    display: block;
+  }
+  .nav li ul li {
+    display: block;
+  }
+}
+/*----------social------------*/
+.news-social{
+  display: flex;
+  margin-left: 15rem;
+}
+/*---------------*/
+.px-3{
+  background-color:#1d75d6 ;
+}
+
+/*----- slide img ------*/
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container1 {
+    
+    width:45rem;
+    margin-left: 25rem;
+    position: relative;
+  }
+  
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  .row1 img{
+    width: 70%;
+  
+    }
+    .row1:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+  .row img{
+    width: 50%;
+
+  }
+
+.row .col-lg-9 .news-left .news-subject{
+  margin-left: 15rem;
+}
+.row .col-lg-9 .news-left .news-subject h1{
+  font-size: 40px;
+}
+
+.container img {
+  border-radius: 40%;
+}
+
+/*-------------รายละเอียด--------------*/
+.button_all{
+  width: auto;
+  
+  margin-left: 10rem;
+  
+ 
+  margin-top: 5rem;
+  
+}
+.button_all button {
+  background-color: #1d75d6;
+  width: 100px;
+  height: 50px;
+}
+.button_all a{
+  text-decoration: none;
+  color: #000;
+}
+
+
+/*--------ตัวอย่างสินค้า---------*/
+.news-mid{
+
+}
+.news-mid a{
+  font-size: 17px;
+  text-decoration: none;
+  color: #000;
+}
+/*--------------โหวต-----------*/
+
+/*-------------All produck------------*/
+.dishes{
+  padding:2rem 9%;
+}
+.dishes:nth-child(even){
+  background: #eee;
+
+}
+.sup-heading{
+  margin-top: 85px;
+  text-align: center;
+  color: var(--green);
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+.heading{
+  text-align: center;
+  color: var(--black);
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+.btn2 {
+  margin-top: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: #fff;
+  background: var(--black);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.8rem 3rem;
+}
+.btn2:hover{
+  background: var(--green);
+  letter-spacing: 0.5rem;
+}
+.dishes .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+  height: 105rem;
+
+}
+
+.dishes .box-container .box{
+  padding: 2.5rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0,0,0,0.2);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+
+}
+
+.dishes .box-container .box .fa-heart,
+.dishes .box-container .box .fa-eye{
+  text-decoration: none;
+  position: absolute;
+  top: 1.5rem;
+  background: #eee;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: var(--black);
+
+}
+
+.dishes .box-container .box .fa-heart:hover,
+.dishes .box-container .box .fa-eye:hover{
+  background: var(--green);
+  color: #fff;
+}
+.dishes .box-container .box .fa-heart{
+  right: -15rem;
+}
+
+.dishes .box-container .box .fa-eye{
+  left: -15rem;
+}
+.dishes .box-container .box:hover .fa-heart{
+  right: 1.5rem;
+}
+
+.dishes .box-container .box:hover .fa-eye{
+  left: 1.5rem;
+}
+
+.dishes .box-container .box img{
+  height: 17rem;
+  margin: 1rem 0;
+}
+
+.dishes .box-container .box h3{
+  color: var(--black);
+  font-size: 2.5rem;
+}
+
+.dishes .box-container .box .stars{
+  padding: 1rem 0;
+}
+
+.dishes .box-container .box .stars i{
+  font-size: 1.7rem;
+  color: var(--green);
+}
+
+.dishes .box-container .box span{
+  color: var(--green);
+  font-weight: bolder;
+  margin-right: 1rem;
+  font-size: 2.5rem;
+}
+/*---------comment-on-facebook----------*/
+.comment-on-facebook{
+  
+ text-align: center;
+}
+/*-----------facebook link -----------------*/
+
+.face{
+  text-align: center;
+}
+
+
