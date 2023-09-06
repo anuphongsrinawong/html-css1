@@ -35,18 +35,6 @@ fetch('productData.json')
             carouselImagesContainer.appendChild(carouselItem);
         });
 
-        // ใส่ข้อมูลรูปภาพในรายการรูปภาพแบบราว
-        const imageRow = document.querySelector(".row.mt-4");
-        imageRow.innerHTML = "";
-
-        productDataToUse.imageLinks.forEach((imageSrc, index) => {
-            const imageColumn = document.createElement("div");
-            imageColumn.className = "col-md-4";
-            imageColumn.innerHTML = `
-    <img src="${imageSrc}" class="img-fluid cursor" alt="Image ${index + 1}">
-  `;
-            imageRow.appendChild(imageColumn);
-        });
 
         // ใส่ข้อมูลเกี่ยวกับสินค้า
         const productName = document.querySelector(".font-size-14");
